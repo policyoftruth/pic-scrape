@@ -1,6 +1,10 @@
-# pic-scrape
+# pic-scrape: Studio Ghibli Wallpaper Manager
 
-A simple bash-based tool to scrape high-quality images from the Studio Ghibli website and automatically rotate them as your macOS desktop wallpaper.
+A tool to cureate and rotate high-quality Studio Ghibli wallpapers on macOS.
+
+This project scrapes the official "Scene Photographs" provided by Studio Ghibli, which are "artist's selections" meant for the general public. It downloads these high-resolution images and schedules them to rotate as your desktop background, bringing a bit of Ghibli magic to your daily workflow.
+
+> **Respectful Scraping**: This tool is designed to be respectful to the Studio Ghibli servers. It includes intentional delays between requests to avoid overloading their site. Please use it responsibly.
 
 ## Features
 - **Scraper**: Downloads high-resolution still images from recent Studio Ghibli movies.
@@ -8,7 +12,7 @@ A simple bash-based tool to scrape high-quality images from the Studio Ghibli we
 - **Scheduler**: Launchd agent to automatically rotate your wallpaper (configurable: daily or hourly).
 
 ## Prerequisites
-- macOS
+- macOS (Developed and tested on macOS "Tahoe")
 - `curl`
 - `bash`
 
